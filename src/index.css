@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+    /* Breakpoints / Screens */
+    --breakpoint-sm: 480px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 976px;
+    --breakpoint-xl: 1440px;
+
+    --color-dark-purple: #06062C;
+    --color-dark-purple-2: #341539;
+    --color-dark-blue: #06062C;
+    --color-very-dark-blue: #04041D;
+
+    --font-sans: "Poppins", sans-serif;
+    --font-fira: "Fira Code", monospace;
+
+}
+
+@layer utilities {
+    .active-tab {
+        @apply text-white bg-very-dark-blue font-semibold px-6 py-3 rounded-lg shadow-lg hover:cursor-pointer
+    }
+    .tab{
+        @apply text-purple-300 font-semibold px-6 py-3 rounded-lg shadow-lg
+        hover:text-white hover:bg-very-dark-blue hover:cursor-pointer;
+    }
+}
